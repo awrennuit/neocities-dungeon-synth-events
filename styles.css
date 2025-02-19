@@ -1,17 +1,15 @@
 :root {
   --bg: #171111;
-  --body-font: #970202;
-  /* --heading-font: #970202; */
-  /* --light-gray: #c9c9c9; */
-  /* --link: #b868ed; */
-  /* --link-hover: #a85fd8; */
-  /* --white: #ffffff; */
+  --heading-font: #10ff4c;
+  --body-font: #10ff4c;
+  --link: #b868ed;
+  --link-hover: #a85fd8;
+  --yellow: #ffff7a;
 }
 
 * {
   border: 0;
   color: var(--body-font);
-  line-height: 1em;
   margin: 0;
   padding: 0;
 }
@@ -43,22 +41,26 @@ h6,
 marquee,
 nav {
   color: var(--heading-font);
-  font-family: 'Grenze Gotisch', serif;
+  font-family: "Grenze Gotisch", serif;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   padding-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2rem;
-  padding-bottom: 0.75rem;
-}
+  font-size: 2.25rem;
 
-h3 {
-  font-size: 1.25rem;
-  padding-bottom: 0.5rem;
+  a {
+    color: var(--heading-font);
+    font-family: "Grenze Gotisch", serif;
+    font-size: 2.25rem;
+  }
+
+  a:hover {
+    color: var(--heading-font);
+  }
 }
 
 p,
@@ -68,16 +70,65 @@ div,
 label,
 button,
 li {
-  font-family: 'Texturina', serif;
+  font-family: "Texturina", serif;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+a {
+  color: var(--link);
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+ul {
+  list-style-type: none;
+  padding-bottom: 2rem;
 }
 
 section {
   padding-bottom: 2rem;
 }
 
+.month-wrapper {
+  border-bottom: 0.0625rem solid var(--yellow);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.month {
+  font-size: 1.5rem;
+  padding-bottom: 0.25rem;
+}
+
+ol {
+  list-style-type: disc;
+  padding-left: 1rem;
+
+  li {
+    padding-bottom: 1rem;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.archived {
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .month {
+    font-size: 1.2rem;
+  }
+}
+
 .webring-wrapper {
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
