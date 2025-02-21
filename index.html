@@ -48,12 +48,16 @@
 
         <aside class="filter-wrapper">
           <p>Filter by event type</p>
-          <button class="active" type="all" onclick="showEvents()">All</button>
-          <button type="fest" onclick="showEvents('fest')">Fests</button>
-          <button type="tour" onclick="showEvents('tour')">Tours</button>
-          <button type="non-tour" onclick="showEvents('non-tour')">
-            Local
-          </button>
+          <div class="filters">
+            <button class="active" type="all" onclick="showEvents()">
+              All
+            </button>
+            <button type="fest" onclick="showEvents('fest')">Fests</button>
+            <button type="tour" onclick="showEvents('tour')">Tours</button>
+            <button type="non-tour" onclick="showEvents('non-tour')">
+              Local
+            </button>
+          </div>
         </aside>
 
         <section>
