@@ -21,17 +21,6 @@
       <article>
         <h1>The Big List of Live Dungeon Synth Events</h1>
 
-        <p
-          style="
-            color: yellow;
-            font-weight: bold;
-            font-size: 1.4rem;
-            padding-bottom: 2rem;
-          "
-        >
-          Currently under construction
-        </p>
-
         <nav>
           <p>Jump to a section</p>
           <ul>
@@ -44,12 +33,22 @@
           </ul>
         </nav>
 
+        <aside class="filter-wrapper">
+          <p>Filter by event type</p>
+          <button class="active" type="all" onclick="showEvents()">All</button>
+          <button type="fest" onclick="showEvents('fest')">Fests</button>
+          <button type="tour" onclick="showEvents('tour')">Tours</button>
+          <button type="non-tour" onclick="showEvents('non-tour')">
+            Local
+          </button>
+        </aside>
+
         <section>
           <h2><a id="upcoming">Upcoming</a></h2>
           <div class="month-wrapper">
             <p class="month">February</p>
             <ol>
-              <li>
+              <li type="non-tour">
                 <p>Feb 22</p>
                 <p>
                   Pumpkin Witch, Earthen Shield, Darkest Dungeons, Lored Legend,
@@ -65,7 +64,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Feb 23</p>
                 <p>Chemosh, Mortlach, Amon Lanc</p>
                 <p>Cole's Bar | Chicago, IL, USA</p>
@@ -78,7 +77,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Feb 23</p>
                 <p>Lost Tales, p k g d</p>
                 <p>Faust Tavern | San Antonio, TX, USA</p>
@@ -91,7 +90,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Feb 28</p>
                 <p>
                   Tyrant's Might, Nocturnal Onslaught, VVormking, Apoxupon,
@@ -112,7 +111,7 @@
           <div class="month-wrapper">
             <p class="month">March</p>
             <ol>
-              <li>
+              <li type="non-tour">
                 <p>Mar 1</p>
                 <p>Darkest Dungeons, Chipped Topaz, Erlost, Unfeeling</p>
                 <p>Fringe Records NYC | Brooklyn, NY, USA</p>
@@ -125,7 +124,15 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
+                <p>Mar 1</p>
+                <p>Jenn Taiga, Vaelastrasz, Elyvilon, A Pup Named Rosy</p>
+                <p>Remedy | Pittsburgh, PA, USA</p>
+                <p>7:00pm EST</p>
+                <p>$10-$15 sliding scale</p>
+                <p>Content Warning: blood, blades, and needles</p>
+              </li>
+              <li type="non-tour">
                 <p>Mar 8</p>
                 <p>Darkest Dungeons, Snowbeasts, Unfeeling</p>
                 <p>Abracadabra Tattoo | Pawtucket, RI, USA</p>
@@ -138,7 +145,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Mar 8</p>
                 <p>Assorted Potions, Illusory Wall, Slime Tamer</p>
                 <p>Captain Quack's Soundspace | Austin, TX, USA</p>
@@ -151,7 +158,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 20</p>
                 <p>Quest Master, Fief</p>
                 <p>Hell's Heroes | Houston, TX, USA</p>
@@ -164,7 +171,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Mar 21</p>
                 <p>
                   Chipped Topaz, Desolation Plains, Cloister Shadows, Vienatve
@@ -179,7 +186,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 22</p>
                 <p>Quest Master, Fief, Mors Vitaque, Sorrowmoon</p>
                 <p>Empty Bottle | Chicago, IL, USA</p>
@@ -192,7 +199,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 23</p>
                 <p>Quest Master, Fief, Diplodocus, Mons</p>
                 <p>
@@ -207,7 +214,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 24</p>
                 <p>Quest Master, Fief, Hillsfar, Mithra</p>
                 <p>The Shred Shed | Pittsburgh, PA, USA</p>
@@ -220,7 +227,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 25</p>
                 <p>Quest Master, Fief, Vaelastrasz</p>
                 <p>Cobra Cabana | Richmond, VA, USA</p>
@@ -233,7 +240,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 26</p>
                 <p>Quest Master, Fief, more TBA</p>
                 <p>
@@ -248,7 +255,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 27</p>
                 <p>Quest Master, Fief, Ichorclaw, Deep Gnome</p>
                 <p>Space | Portland, ME, USA</p>
@@ -261,7 +268,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="non-tour">
                 <p>Mar 28</p>
                 <p>Dungeon Country, Marine Kimono, LoneStarDeath</p>
                 <p>The Tiny Minotaur Tavern | Austin, TX, USA</p>
@@ -274,7 +281,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>Mar 28</p>
                 <p>Northeast Dungeon Siege</p>
                 <p>Quest Master, more TBA</p>
@@ -288,7 +295,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 29</p>
                 <p>Quest Master, Fief, Steaming Woodlands</p>
                 <p>Middle East, Upstairs | Cambridge, MA, USA</p>
@@ -301,7 +308,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>Mar 29</p>
                 <p>Northeast Dungeon Siege</p>
                 <p>Fief, more TBA</p>
@@ -315,7 +322,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>Mar 30</p>
                 <p>Northeast Dungeon Siege</p>
                 <p>TBA</p>
@@ -329,7 +336,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Mar 30</p>
                 <p>Quest Master, Fief, Malfet, Steaming Woodlands</p>
                 <p>TV Eye, The Ballroom | Ridgewood, NY, USA</p>
@@ -347,7 +354,7 @@
           <div class="month-wrapper">
             <p class="month">April</p>
             <ol>
-              <li>
+              <li type="tour">
                 <p>Apr 3</p>
                 <p>
                   Quest Master, Apoxupon, Assorted Potions, Goblet Grotto,
@@ -369,7 +376,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 4</p>
                 <p>Quest Master, Tyrant's Might, Infesta Silvae</p>
                 <p>Which House | Denton, TX, USA</p>
@@ -388,7 +395,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 5</p>
                 <p>
                   Quest Master, Apoxupon, Spectral Decay, Morbærsanger, Fogmoon
@@ -410,7 +417,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 6</p>
                 <p>Quest Master, more TBA</p>
                 <p>The Bug | Denver, CO, USA</p>
@@ -423,7 +430,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 7</p>
                 <p>Quest Master, Fief, more TBA</p>
                 <p>Aces | Salt Lake City, UT, USA</p>
@@ -436,7 +443,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 8</p>
                 <p>Quest Master, more TBA</p>
                 <p>Linger Longer | Phoenix, AZ, USA</p>
@@ -449,7 +456,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 9</p>
                 <p>Quest Master, Putrid Marsh</p>
                 <p>Soda Bar | San Diego, CA, USA</p>
@@ -462,7 +469,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 11</p>
                 <p>Quest Master, Putrid Marsh</p>
                 <p>The Moroccan Lounge | Los Angeles, CA, USA</p>
@@ -475,7 +482,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
                 <p>Apr 12</p>
                 <p>Quest Master, Putrid Marsh, Magick Creature</p>
                 <p>Eli's Mile High Club | Oakland, CA, USA</p>
@@ -493,7 +500,7 @@
           <div class="month-wrapper">
             <p class="month">May</p>
             <ol>
-              <li>
+              <li type="fest">
                 <p>May 1</p>
                 <p>Texas Dungeon Siege Night 1</p>
                 <p>Grim Father, Klokhet, Emberwilde, Crypt 3000, Skullbasher</p>
@@ -513,7 +520,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>May 2</p>
                 <p>Texas Dungeon Siege Day 1</p>
                 <p>
@@ -536,7 +543,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>May 2</p>
                 <p>Texas Dungeon Siege Night 2</p>
                 <p>
@@ -559,7 +566,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>May 3</p>
                 <p>Texas Dungeon Siege Day 2</p>
                 <p>
@@ -582,7 +589,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>May 3</p>
                 <p>Texas Dungeon Siege Night 3</p>
                 <p>
@@ -606,7 +613,7 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>May 4</p>
                 <p>Texas Dungeon Siege Day 3</p>
                 <p>
@@ -630,14 +637,100 @@
                   >live stream</a
                 >
               </li>
-              <li>
+              <li type="tour">
+                <p>May 6</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente,
+                  Apoxupon
+                </p>
+                <p>Southgate Revival House | Newport, KY, USA</p>
+                <p>6:30pm EDT</p>
+                <p>$13 advance, $15 at door</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 7</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente,
+                  Vaelastrasz
+                </p>
+                <p>Pie Shop | Washington, DC, USA</p>
+                <p>7:30pm EDT</p>
+                <p>$25</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 8</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente, Sombre
+                  Arcane
+                </p>
+                <p>O'Brien's Pub | Boston, MA, USA</p>
+                <p>Time TBA</p>
+                <p>Ticket price TBA</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 9</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente,
+                  Chipped Topaz
+                </p>
+                <p>The Broadway | Brooklyn, NY, USA</p>
+                <p>Time TBA</p>
+                <p>Ticket price TBA</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 10</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente,
+                  Elyvilon, Kloister Shadows
+                </p>
+                <p>Ghost Light | Detroit, MI, USA</p>
+                <p>Time TBA</p>
+                <p>Ticket price TBA</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
                 <p>May 11</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
                 <p>
                   Flickers From the Fen, Orcus, Amn, Silencio Permanente,
                   Apoxupon
                 </p>
                 <p>Cole's Bar | Chicago, IL, USA</p>
-                <p>7:00pm CDT</p>
+                <p>6:30pm CDT</p>
                 <p>$15 advance, $20 at door</p>
                 <a
                   href="https://colesbarchicago.com/event/flickers-from-the-fen-uk-orcus-uk-amn-uk-greece-silencio-permanente-argentina-apoxupon-texas/coles-bar/n-milwaukee-illinois"
@@ -646,7 +739,54 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="tour">
+                <p>May 12</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente, TBA
+                </p>
+                <p>Venue TBA | Minneapolis, MN, USA</p>
+                <p>Time TBA</p>
+                <p>Ticket price TBA</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 16</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Flickers From the Fen, Orcus, Amn, Silencio Permanente,
+                  Fugitive Wizard
+                </p>
+                <p>Jules Maes Saloon | Seattle, WA, USA</p>
+                <p>7:00pm PDT</p>
+                <p>$15 advance, $20 at door</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 17</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>Flickers From the Fen, Orcus, Amn, Silencio Permanente</p>
+                <p>Shanghai Tunnel Bar | Portland, OR, USA</p>
+                <p>Time TBA</p>
+                <p>$15</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="fest">
                 <p>May 17</p>
                 <p>Under the Dice Fest (May 16-18 hobby convention)</p>
                 <p>
@@ -663,6 +803,37 @@
                   >tickets & info</a
                 >
               </li>
+              <li type="tour">
+                <p>May 22</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>
+                  Silencio Permanente, Apoxupon, Forwyrd, Magick Creature,
+                  Emberwilde
+                </p>
+                <p>The Knockout | San Francisco, CA, USA</p>
+                <p>8:00pm PDT</p>
+                <p>$10</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
+              <li type="tour">
+                <p>May 25</p>
+                <p>Dvngeoninvasion ov thee Nation Tour</p>
+                <p>Silencio Permanente, Apoxupon, TBA</p>
+                <p>Knucklehead | Los Angeles, CA, USA</p>
+                <p>Time TBA</p>
+                <p>Ticket price TBA</p>
+                <a
+                  href="https://texasdungeonsynth.com/pages/dvngeonvasion-ov-thee-nation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >tickets & info</a
+                >
+              </li>
             </ol>
           </div>
           <div class="month-wrapper">
@@ -674,7 +845,7 @@
           <div class="month-wrapper">
             <p class="month">July</p>
             <ol>
-              <li>
+              <li type="fest">
                 <p>Jul 11</p>
                 <p>Dungeon Siege West</p>
                 <p>TBA</p>
@@ -688,7 +859,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>Jul 12</p>
                 <p>Dungeon Siege West</p>
                 <p>TBA</p>
@@ -702,7 +873,7 @@
                   >tickets & info</a
                 >
               </li>
-              <li>
+              <li type="fest">
                 <p>Jul 13</p>
                 <p>Dungeon Siege West</p>
                 <p>TBA</p>
@@ -789,5 +960,6 @@
       type="module"
       src="https://toni-lappalainen.github.io/dswebring/index.js"
     ></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
