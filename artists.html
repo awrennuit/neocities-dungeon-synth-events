@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A compendium of dungeon synth events around the globe."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Live Dungeon Synth Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <button
+        class="nav-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="toggle the navigation menu"
+        onclick="toggleNavigation()"
+      >
+        <span></span>
+      </button>
+      <nav id="navigation" class="main-navigation">
+        <ul>
+          <li>
+            <a href="/">Events</a>
+          </li>
+          <li>
+            <p class="current-page">Artists</p>
+          </li>
+          <li>
+            <a href="/venues">Venues</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>Artist Compendium</h1>
+
+        <p style="color: yellow; font-weight: bold; padding-bottom: 2rem">
+          COMING SOON
+        </p>
+
+        <p>
+          These artists want to play more live shows. If you're an artist,
+          congratulations you have one more band for your next show. If you set
+          up shows or own a venue, now you have a list of awesome (and nerdy)
+          fantasy artists to play your events. Win-win. If you want to be added
+          to this list please email
+          <a
+            href="mailto:dungeonsynthevents@gmail.com?subject=Please Add My Artist"
+            >dungeonsynthevents@gmail.com</a
+          >
+          with
+          <strong style="color: yellow"
+            >ARTIST/CONTACT INFO/LOCATION THAT YOU WANT TO PERFORM</strong
+          >. Enjoy collaborating!
+        </p>
+      </article>
+
+      <aside class="webring-wrapper">
+        <webring-banner
+          host-name="dungeonsynthevents.neocities"
+          title="⚔️ Dungeon Synth Webring ⚔️"
+          open-new
+        >
+        </webring-banner>
+      </aside>
+    </main>
+
+    <script
+      type="module"
+      src="https://toni-lappalainen.github.io/dswebring/index.js"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

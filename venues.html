@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A compendium of dungeon synth events around the globe."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Live Dungeon Synth Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <button
+        class="nav-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="toggle the navigation menu"
+        onclick="toggleNavigation()"
+      >
+        <span></span>
+      </button>
+      <nav id="navigation" class="main-navigation">
+        <ul>
+          <li>
+            <a href="/">Events</a>
+          </li>
+          <li>
+            <a a href="/artists">Artists</a>
+          </li>
+          <li>
+            <p class="current-page">Venues</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>Venue Compendium</h1>
+
+        <p style="color: yellow; font-weight: bold; padding-bottom: 2rem">
+          COMING SOON
+        </p>
+
+        <p>
+          These venues book dungeon synth and other nerdy fantasy events. Reach
+          out to them to set up shows in your area. Look at their calendars for
+          cool local events. If you know of a venue that can be added to this
+          list please email
+          <a
+            href="mailto:dungeonsynthevents@gmail.com?subject=Please Add This Venue"
+            >dungeonsynthevents@gmail.com</a
+          >
+          with
+          <strong style="color: yellow">VENUE NAME/WEBSITE/LOCATION</strong>.
+          Thank you!
+        </p>
+      </article>
+
+      <aside class="webring-wrapper">
+        <webring-banner
+          host-name="dungeonsynthevents.neocities"
+          title="⚔️ Dungeon Synth Webring ⚔️"
+          open-new
+        >
+        </webring-banner>
+      </aside>
+    </main>
+
+    <script
+      type="module"
+      src="https://toni-lappalainen.github.io/dswebring/index.js"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

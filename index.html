@@ -17,6 +17,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="nav-header">
+      <button
+        class="nav-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="toggle the navigation menu"
+        onclick="toggleNavigation()"
+      >
+        <span></span>
+      </button>
+      <nav id="navigation" class="main-navigation">
+        <ul>
+          <li>
+            <p class="current-page">Events</p>
+          </li>
+          <li>
+            <a href="/artists">Artists</a>
+          </li>
+          <li>
+            <a href="/venues">Venues</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <article>
         <h1>The Big List of Live Dungeon Synth Events</h1>
