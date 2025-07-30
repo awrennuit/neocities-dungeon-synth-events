@@ -177,6 +177,22 @@ ol {
   padding-bottom: 2rem;
 }
 
+/* ARTIST PAGE */
+.artist-wrapper {
+  padding: 2rem 0;
+  border-top: 0.125rem solid var(--body-font);
+
+  a {
+    color: var(--link);
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: var(--link-hover);
+  }
+}
+/* END ARTIST PAGE */
+
 /* MAIN NAVIGATION */
 .nav-header {
   background-color: var(--navigation);
