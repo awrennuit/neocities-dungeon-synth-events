@@ -177,8 +177,9 @@ ol {
   padding-bottom: 2rem;
 }
 
-/* ARTIST PAGE */
-.artist-wrapper {
+/* ARTIST & VENUE PAGES */
+.artist-wrapper,
+.venue-wrapper {
   padding: 2rem 0;
   border-top: 0.125rem solid var(--body-font);
 
@@ -191,7 +192,7 @@ ol {
     color: var(--link-hover);
   }
 }
-/* END ARTIST PAGE */
+/* END ARTIST & VENUE PAGES */
 
 /* MAIN NAVIGATION */
 .nav-header {
