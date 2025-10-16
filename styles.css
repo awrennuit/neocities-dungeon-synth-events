@@ -161,11 +161,11 @@ ol {
   }
 }
 
-.archived {
-  .year {
-    font-size: 1.5rem;
-  }
+.year {
+  font-size: 1.5rem;
+}
 
+.archived {
   .month {
     font-size: 1.2rem;
   }
